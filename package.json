@@ -1,0 +1,22 @@
+{
+  "name": "interior-consultant",
+  "version": "1.0.0",
+  "description": "An interior consultant webpage",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daveguz97/Interior-Consultant.git"
+  },
+  "author": "David Guzman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daveguz97/Interior-Consultant/issues"
+  },
+  "homepage": "https://github.com/daveguz97/Interior-Consultant#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
