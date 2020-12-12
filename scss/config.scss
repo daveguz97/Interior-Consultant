@@ -14,8 +14,17 @@ body {
 
 body {
     background-color: $background-color;
-    color: #eee;
     font-family: 'Montserrat', sans-serif;
+}
+
+body,
+a {
+    color: $text-color;
+}
+
+main {
+    position: relative;
+    height: 100%;
 }
 
 h1 {
@@ -42,6 +51,15 @@ h6 {
     font-size: 1.5rem;
 }
 
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .container {
     width: 80%;
 }
+
+@import './mobile.scss';
