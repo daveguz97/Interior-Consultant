@@ -30,14 +30,16 @@ const switchTheme = () => {
     const theme = document.querySelector('.theme');
     const body = document.querySelector('body');
     const links = document.querySelectorAll('a');
+    const navList = document.querySelector('.nav-links');
     const logo = document.querySelector('.logo');
-    const burgerDiv = document.querySelector('.burger div');
+    const burgerLine1 = document.querySelector('.line-1');
+    const burgerLine2 = document.querySelector('.line-2');
+    const burgerLine3 = document.querySelector('.line-3');
     const textBlock = document.querySelector('.text-block');
 
     // Colors
     const darkColor = '#181719';
     const lightColor = '#eee';
-
 
     theme.addEventListener('click', () => {
         if (theme.classList.contains('fa-moon')) {
@@ -46,8 +48,11 @@ const switchTheme = () => {
             body.style.backgroundColor = lightColor;
             body.style.color = darkColor;
             logo.style.borderColor = darkColor;
-            burgerDiv.style.backgroundColor = darkColor;
+            burgerLine1.style.backgroundColor = darkColor;
+            burgerLine2.style.backgroundColor = darkColor;
+            burgerLine3.style.backgroundColor = darkColor;
             textBlock.style.backgroundColor = lightColor;
+            navList.style.backgroundColor = lightColor
             links.forEach((link) => (link.style.color = darkColor));
         } else {
             theme.classList.remove('fa-sun');
@@ -55,8 +60,11 @@ const switchTheme = () => {
             body.style.backgroundColor = darkColor;
             body.style.color = lightColor;
             logo.style.border = `1px solid ${lightColor}`;
-            burgerDiv.style.backgroundColor = lightColor;
+            burgerLine1.style.backgroundColor = lightColor;
+            burgerLine2.style.backgroundColor = lightColor;
+            burgerLine3.style.backgroundColor = lightColor;
             textBlock.style.backgroundColor = darkColor;
+            navList.style.backgroundColor = darkColor;
             links.forEach((link) => (link.style.color = lightColor));
         }
     });
