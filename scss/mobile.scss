@@ -5,11 +5,16 @@
     body {
         overflow-x: hidden;
     }
+
+    .burger {
+        position: fixed;
+        right: 0;
+    }
     .nav-links {
-        position: absolute;
+        position: fixed;
         right: 0;
         height: 100%;
-        top: 8vh;
+        // top: 5vh;
         bottom: 0;
         width: 100%;
         background-color: darken($color: $background-color, $amount: 10%);
@@ -44,9 +49,21 @@
         }
     }
 
+    .text-content {
+        width: 100%;
+    }
+
+    .text-block {
+        bottom: -150px;
+    }
+
     .image-content {
         margin-top: 2rem;
         width: 100%;
+    }
+
+    footer {
+        border-top: 1px solid #a9a9a9;
     }
 }
 
