@@ -58,11 +58,6 @@
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-// Showcase
-.showcase {
-    height: 90vh;
-}
-
 .showcase-wrapper {
     width: 100%;
     display: flex;
@@ -101,7 +96,7 @@
     max-width: 410px;
     background-color: $background-color;
     bottom: -70px;
-    right: 20px;
+    right: 5%;
     padding: 1rem;
     margin-bottom: 2rem;
 }
@@ -127,7 +122,7 @@
     .profession {
         margin-top: 0.5rem;
         font-size: 12px;
-        font-weight: 500
+        font-weight: 500;
     }
 }
 

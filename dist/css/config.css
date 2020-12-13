@@ -3,23 +3,26 @@
   padding: 0;
   box-sizing: border-box; }
 
-html,
-body {
+html {
   height: 100%;
   width: 100%; }
+
+body {
+  min-height: 100%; }
 
 body {
   background-color: #181719;
   font-family: 'Montserrat', sans-serif; }
 
+main {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
 body,
 a,
 span {
   color: #eee; }
-
-main {
-  position: relative;
-  height: 100%; }
 
 h1 {
   font-size: 4rem; }
@@ -49,29 +52,33 @@ a {
   margin: auto; }
 
 @media screen and (max-width: 768px) {
-  main {
+  body {
     overflow-x: hidden; }
   .nav-links {
     position: absolute;
     right: 0;
-    height: 92vh;
+    height: 100%;
     top: 8vh;
+    bottom: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in; }
+    transition: transform 0.5s ease-in;
+    z-index: 4; }
   .nav-item {
     opacity: 0; }
   .nav-active {
     transform: translateX(0%); }
   .burger {
-    display: block; }
+    display: block;
+    z-index: 999; }
   .showcase-wrapper {
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center; }
     .showcase-wrapper .lead {
       margin-bottom: 1.5rem; }
   .image-content {
