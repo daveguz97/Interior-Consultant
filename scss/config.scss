@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background-color: $background-color;
+    background-color: $text-color;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -30,7 +30,7 @@ main {
 body,
 a,
 span {
-    color: $text-color;
+    color: $background-color;
 }
 
 h1 {

@@ -12,7 +12,7 @@ body {
   position: relative; }
 
 body {
-  background-color: #181719;
+  background-color: #eee;
   font-family: 'Montserrat', sans-serif; }
 
 main {
@@ -22,7 +22,7 @@ main {
 body,
 a,
 span {
-  color: #eee; }
+  color: #181719; }
 
 h1 {
   font-size: 4rem; }
@@ -54,6 +54,16 @@ a {
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden; }
+  h1 {
+    font-size: 3.5rem; }
+  h2 {
+    font-size: 2.5rem; }
+  h3 {
+    font-size: 2rem; }
+  h4 {
+    font-size: 1.5rem; }
+  h6 {
+    font-size: 1rem; }
   .burger {
     position: fixed;
     right: 0; }
@@ -71,6 +81,8 @@ a {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     z-index: 4; }
+    .nav-links a {
+      color: #eee; }
   .nav-item {
     opacity: 0; }
   .nav-active {
