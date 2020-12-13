@@ -13,7 +13,8 @@ body {
   font-family: 'Montserrat', sans-serif; }
 
 body,
-a, span {
+a,
+span {
   color: #eee; }
 
 main {
@@ -44,7 +45,8 @@ a {
     text-decoration: underline; }
 
 .container {
-  width: 80%; }
+  width: 80%;
+  margin: auto; }
 
 @media screen and (max-width: 768px) {
   main {

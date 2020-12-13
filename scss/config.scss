@@ -18,7 +18,8 @@ body {
 }
 
 body,
-a, span {
+a,
+span {
     color: $text-color;
 }
 
@@ -60,6 +61,7 @@ a {
 
 .container {
     width: 80%;
+    margin: auto;
 }
 
 @import './mobile.scss';
