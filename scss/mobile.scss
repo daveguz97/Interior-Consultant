@@ -34,6 +34,19 @@
     .burger {
         display: block;
     }
+
+    .showcase-wrapper {
+        flex-direction: column;
+        
+        .lead {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .image-content {
+        margin-top: 2rem;
+        width: 100%;
+    }
 }
 
 @keyframes NavLinkFade {

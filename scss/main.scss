@@ -66,10 +66,8 @@
 .showcase-wrapper {
     width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     margin-top: 4rem;
-    margin-right: 2rem;
     .lead {
         font-size: 1.5rem;
         line-height: 1.3;
@@ -108,9 +106,29 @@
     margin-bottom: 2rem;
 }
 
+.profile-div {
+    display: flex;
+}
+
 .profile-pic {
-    width: 25%;
+    width: 30%;
     border-radius: 50%;
+}
+
+.text-div {
+    align-self: center;
+    margin-left: 1rem;
+
+    .name {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .profession {
+        margin-top: 0.5rem;
+        font-size: 12px;
+        font-weight: 500
+    }
 }
 
 @import './mobile.scss';
